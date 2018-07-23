@@ -1,0 +1,44 @@
+{
+    "architecture": "cortex-m4f",
+    "cc": "armgcc",
+    "changelog": "r2.1.2 update",
+    "name": "nrf52840_preview_dk",
+    "patch": "base",
+    "relocator": "cortex-m",
+    "target": "nrf52840_preview_dk",
+    "version": "r2.1.2",
+    "vms": [
+        {
+            "bc": [
+                "0x00017000"
+            ],
+            "core_dep": "r2.1.2",
+            "description": "Standard VM based on FreeRTOS",
+            "features": [],
+            "memdelta": 560,
+            "pro": false,
+            "rtos": "freertos9",
+            "title": "Standard VM",
+            "vm": [
+                "0x00000000"
+            ]
+        },
+        {
+            "bc": [
+                "0x00017000"
+            ],
+            "core_dep": "r2.1.2",
+            "description": "Support for NRF52 BLE",
+            "features": [
+                "nrf52_ble"
+            ],
+            "memdelta": 560,
+            "pro": false,
+            "rtos": "freertos9",
+            "title": "BLE enabled VM",
+            "vm": [
+                "0x00000000"
+            ]
+        }
+    ]
+}

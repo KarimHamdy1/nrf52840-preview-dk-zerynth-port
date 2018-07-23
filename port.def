@@ -1,0 +1,54 @@
+/* Port definition */
+
+////LAYOUT: nrf52840_preview_dk
+////PERIPHERALS: SERIAL0 ADC0 PWMD0 ICUD0 SPI0 I2C0
+////CDEFINES: NRF52
+
+const PinInfo const _vhalpinmap[] STORED = {
+    /* D0   */ MAKE_PIN(PA, 8,  HAS_EXT | HAS_SER ),
+    /* D1   */ MAKE_PIN(PA, 6,  HAS_EXT | HAS_SER ),
+    /* D2   */ MAKE_PIN(PA, 13,  HAS_EXT ),
+
+};
+
+
+const PinClass const _analogclass[] STORED = {
+
+};
+
+const PinClass const _spiclass[] STORED = {
+
+};
+
+const PinClass const _i2cclass[] STORED = {
+
+};
+
+const PinClass const _pwmclass[] STORED = {
+
+};
+
+
+const PinClass const _icuclass[] STORED = {
+
+};
+
+const PinClass const _canclass[] STORED = {
+};
+
+const PinClass const _serclass[] STORED = {
+    /* RX0 */ MAKE_PIN_CLASS(0, 0, 0, 0),
+    /* TX0 */ MAKE_PIN_CLASS(1, 0, 0, 0),
+
+};
+
+const PinClass const _dacclass[] STORED = {
+};
+
+const PinClass const _ledclass[] STORED = {
+    /* LED0 */ MAKE_PIN_CLASS(2, 0, 0, 0),
+};
+
+const PinClass const _btnclass[] STORED = {
+};
+
